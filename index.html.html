@@ -1,0 +1,118 @@
+<!-- Save this file as index.html alongside background.jpg -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height:100%; }
+    body {
+      font-family: 'Oswald', sans-serif;
+      color: #fff;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+      overflow:hidden;
+    }
+    body::before {
+      content: "";
+      position:absolute; top:0; left:0; right:0; bottom:0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%);
+      z-index:0;
+    }
+    .container {
+      position:relative;
+      z-index:1;
+      text-align:center;
+      padding:30px 30px;
+      background: rgba(0,0,0,0.15);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius:8px;
+      max-width:600px;
+      width:90%;
+    }
+    h1 {
+      font-size:3.2rem;
+      margin-bottom:0.8rem;
+      font-weight:700;
+      letter-spacing:2px;
+      text-shadow:0 1px 4px rgba(0,0,0,0.05);
+    }
+    p.subtitle {
+      font-size:1.2rem;
+      margin-bottom:0.5rem;
+      font-weight:300;
+      color: rgba(255,255,255,0.9);
+      letter-spacing:1px;
+      text-shadow:0 1px 4px rgba(0,0,0,0.05);
+    }
+    p.email {
+      font-size:0.875rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom:1rem;
+      letter-spacing:1px;
+      text-shadow:0 1px 4px rgba(0,0,0,0.05);
+    }
+    p.bio {
+      font-size:1rem;
+      margin-bottom:2rem;
+      line-height:1.6;
+      max-width:500px;
+      margin:0 auto;
+      font-weight:300;
+      color: rgba(255,255,255,0.95);
+    }
+    .social-links {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:0.85rem;
+      text-transform: lowercase;
+      margin-top:1rem;
+    }
+    .social-links a {
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+      margin: 0 0.3rem;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    .social-links a:hover {
+      opacity:1;
+      text-decoration: underline;
+    }
+    .social-links span {
+      color: rgba(255,255,255,0.6);
+      margin: 0 0.3rem;
+      opacity:0.8;
+    }
+    @media (max-width:600px) {
+      .container { padding:20px; }
+      h1 { font-size:2.5rem; }
+      p.subtitle { font-size:1.1rem; }
+      p.email { font-size:0.8rem; }
+      p.bio { font-size:0.9rem; }
+      .social-links { font-size:0.75rem; margin-top:0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Myst</h1>
+    <p class="subtitle">Artist & Creative Director</p>
+    <p class="email">hello@mystcult.com</p>
+    <p class="bio">I create cinematic, dreamlike visuals that blend fantasy, surrealism, and emotion — working with global artists and visionary brands. This is the portal into my world.</p>
+    <div class="social-links">
+      <a href="https://instagram.com/myst.cult" target="_blank">instagram</a>
+      <span>//</span>
+      <a href="https://tiktok.com/@myst.cult" target="_blank">tiktok</a>
+    </div>
+  </div>
+</body>
+</html>
